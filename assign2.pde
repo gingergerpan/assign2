@@ -182,12 +182,13 @@ void draw(){
   }
 }
 void keyPressed() {
-    if (key == ENTER && gameState == GAME_START){
+    if (key == ENTER && gameState == GAME_START || gameState == GAME_WIN || gameState == GAME_LOSE ){
       gameState = GAME_RUN;
       life = 3;
       frogX = frogInitX;
       frogY = frogInitY;
     }  
+    
     if (key == CODED && gameState == GAME_RUN) {
       switch( keyCode ){
         case UP:
