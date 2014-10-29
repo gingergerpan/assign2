@@ -216,8 +216,8 @@ void keyPressed() {
           break;
         case RIGHT:
           frogX += 32;
-          if (frogX > width){
-            frogX = width - 16;
+          if (frogX >= width - 16){
+            frogX = width - 32;
           }
           break;  
       }
