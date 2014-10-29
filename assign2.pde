@@ -162,9 +162,14 @@ void draw(){
                life--;
                gameState = FROG_DIE;
              }
+             
+        if(frogY == pondY){
+          gameState = GAME_WIN
+        }
+        
         //run out of lifes
         if(life == 0){
-        gameState = GAME_LOSE;
+          gameState = GAME_LOSE;
         }
         break;
     case GAME_WIN:
@@ -216,9 +221,6 @@ void keyPressed() {
           }
           break;  
       }
-    }
-    if(0 < frogY && frogY < 64){
-      gameState = GAME_WIN;
     }
     
     
