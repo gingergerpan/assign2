@@ -164,7 +164,7 @@ void draw(){
              }
              
         if(frogY == pondY){
-          gameState = GAME_WIN
+          gameState = GAME_WIN;
         }
         
         //run out of lifes
